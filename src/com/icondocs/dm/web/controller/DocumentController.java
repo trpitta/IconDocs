@@ -104,7 +104,7 @@ public class DocumentController {
         docum.setUiid(document.getId());
         docum.setTitle(document.getTitle());
         docum.setType(document.getType());
-        //docum.setPath(document.getPath());
+        docum.setPath(document.getPath());
 
     	mav.setViewName("document");
     	mav.addObject("document", document);
