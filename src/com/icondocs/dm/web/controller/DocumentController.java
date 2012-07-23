@@ -160,12 +160,6 @@ public class DocumentController {
     public ModelAndView cloneDocum(@ModelAttribute Docum docum) {
         ModelAndView mav = new ModelAndView();
 
-        System.out.println("Great, i am here in clone:"+docum);
-		System.out.println("Great, i am here in clone:"+docum.getUiid());
-		System.out.println("Great, i am here on clone:"+docum.getTitle());
-		System.out.println("Great, i am here on clone:"+docum.getType());
-		System.out.println("Great, i am here on clone:"+docum.getPath());
-
 		mav.setViewName("document");
 		mav.addObject("document", docum);
 
